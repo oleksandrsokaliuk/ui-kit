@@ -1,0 +1,48 @@
+.fourth-menu-ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.fourth-menu-link {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+.fourth-menu-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: blue;
+  transition: all 0.3s;
+}
+
+.fourth-menu-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 5px;
+  background-color: green;
+  transition: all 0.3s;
+}
+
+.fourth-menu-link:hover:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+.fourth-menu-link:hover:after {
+  width: 50%;
+  transform: translateX(-100%);
+}

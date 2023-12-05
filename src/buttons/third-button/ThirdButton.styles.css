@@ -1,0 +1,47 @@
+.third-button {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  padding: 20px 40px;
+  border: 5px solid black;
+  font-size: 25px;
+  position: relative;
+}
+
+.third-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  transition: 0.3s;
+  transform: rotateX(90deg);
+}
+
+.third-button:hover:before {
+  transform: rotateX(0deg);
+}
+
+.third-button:hover {
+  color: white;
+}
+
+.third-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  transition: 0.3s;
+  transform: rotateY(90deg);
+}
+
+.third-button:hover:after {
+  transform: rotateY(0deg);
+}

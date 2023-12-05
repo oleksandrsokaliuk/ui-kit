@@ -1,0 +1,54 @@
+.thirdcard-container {
+  position: absolute;
+  width: clamp(200px, 20%, 500px);
+  background: #071a71;
+  padding: 15px 30px;
+  box-shadow: 0px 2px 17px 1px rgba(0, 0, 0, 0.29);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+  bottom: 5px;
+  right: 5px;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  animation: fade-in 3s linear;
+}
+
+.thirdcard-container > h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #6f81d6;
+}
+
+.thirdcard-container > div {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, #071a71, #6f81d6);
+  border-radius: 50px;
+  transform: scaleX(0);
+  transform-origin: left;
+  align-self: center;
+  animation: progress 2.5s 0.3s linear;
+}
+
+@keyframes progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fade-in {
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  95% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,26 @@
+.sidebar button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background: #4734d7;
+}
+
+.sidebar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+}
+
+.sidebar-header {
+  display: flex;
+}

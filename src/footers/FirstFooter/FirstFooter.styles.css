@@ -1,0 +1,112 @@
+.footers-first {
+  background: #0a1535;
+  color: #f9f9f9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 20px;
+  font-family: "Poppins";
+}
+
+.footers-first article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 50px 40px;
+  margin: -99px 20px 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #773ecb, #2663ff);
+}
+
+.footers-first article h2 {
+  color: rgb(255, 255, 255 / 70%);
+}
+
+.footers-first article button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 40px 10px 44px;
+  width: 100%;
+  background: #0a1536;
+  border: 0;
+  border-radius: 30px;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.footers-first section {
+  padding: 0 50px;
+}
+
+section.top {
+  padding-top: 30px;
+  margin-bottom: 48px;
+}
+
+section.top img {
+  /* display: block; */
+  height: 40px;
+  width: 40px;
+  margin: 0 0 30px;
+}
+
+section.top ul {
+  list-style: none;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.top ul li a {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 90%);
+}
+
+section.top h3 {
+  color: rgba(255, 255, 255, 40%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+section.bottom {
+  padding-top: 10px;
+  border-top: 2px solid rgba(255, 255, 255, 10%);
+  color: rgba(255, 255, 255, 40%);
+  font-size: 13px;
+}
+
+@media (width > 480px) {
+  .footers-first article button {
+    width: 70%;
+  }
+  section.top ul {
+    padding-right: 10%;
+  }
+}
+
+@media (width > 600px) {
+  .footers-first article {
+    flex-direction: row;
+    min-height: 140px;
+    margin: -70px 20px 20px;
+    padding: 30px 50px 30px;
+  }
+
+  .footers-first article button {
+    width: auto;
+    padding: 10px 20px 10px 24px;
+  }
+
+  section.top ul {
+    grid-template-columns: repeat(4, 1fr);
+    padding-right: 0;
+  }
+}

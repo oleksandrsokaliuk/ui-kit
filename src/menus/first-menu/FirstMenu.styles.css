@@ -1,0 +1,50 @@
+.first-menu-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-menu-li {
+  list-style: none;
+}
+
+.first-menu-link {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.first-menu-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s;
+}
+
+.first-menu-link:hover:before,
+.first-menu-link:hover:after {
+  transform: scaleX(1);
+}
+
+.first-menu-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.4s;
+}

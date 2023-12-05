@@ -1,0 +1,58 @@
+.third-menu-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.third-menu-li {
+  list-style: none;
+}
+
+.third-menu-link {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 15px 30px;
+  margin: 0px 10px;
+  font-size: 20px;
+  position: relative;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+
+.third-menu-link span {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  transition: all 0.3s;
+  transform-origin: top;
+  transform: scaleY(0);
+  z-index: -1;
+}
+
+.third-menu-link span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.1s;
+}
+
+.third-menu-link span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.2s;
+}
+
+.third-menu-link span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.3s;
+}
+
+.third-menu-link:hover span {
+  transform: scaleY(1);
+}
+
+.third-menu-link:hover {
+  color: white;
+}

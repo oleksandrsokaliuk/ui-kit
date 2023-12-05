@@ -1,0 +1,17 @@
+.fourth-button {
+  text-decoration: none;
+  color: brown;
+  border: 3px solid brown;
+  padding: 20px 40px;
+  font-family: "roboto", sans-serif;
+  word-spacing: -2px;
+  font-weight: 300;
+  transition: all 0.8s;
+  text-transform: uppercase;
+}
+
+.fourth-button:hover {
+  word-spacing: 3px;
+  font-weight: 900;
+  border: 5px solid brown;
+}

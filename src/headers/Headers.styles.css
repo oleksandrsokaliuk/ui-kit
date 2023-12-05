@@ -1,0 +1,17 @@
+.headers {
+}
+
+.hovertext span {
+  -webkit-text-stroke: 0.09px white;
+  /* color: transparent; */
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.hovertext span:hover {
+  color: white;
+}
+
+.hovertext span:has(~ span:hover) {
+  color: white;
+}
